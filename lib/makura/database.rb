@@ -138,9 +138,9 @@ module Makura
 
     def design_docs(params = {})
       pass = {
-        startkey: '_design0',
-        endkey: '_design',
-        descending: true,
+        :startkey => '_design0',
+        :endkey => '_design',
+        :descending => true,
       }.merge(params)
 
       all_docs(pass)
